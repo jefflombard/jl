@@ -5,9 +5,9 @@ import Skill from "./Skill";
 class SkillsContainer extends Component {
   render() {
     let skills = ["javascript","react","test"];
-    let skillsList = skills.map(skill => {
+    let skillsList = skills.map((skill,id) => {
       return (
-          <div className="skillContainer-FlexItem">
+          <div key={'skill'+id} className="skillContainer-FlexItem">
             <Skill name={skill}/>
           </div>
         );
@@ -15,7 +15,7 @@ class SkillsContainer extends Component {
 
     return (
       <div className="skillContainer">
-        <h2>Favorite Skills</h2>
+        <h2>Skills</h2>
         <div className="skillContainer-FlexBox">
           {skillsList}
         </div>

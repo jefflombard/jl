@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import SkillContainer from './Skills/SkillContainer';
-import Skill from './Skills/Skill';
+import ProjectContainer from './Projects/ProjectContainer';
+import CardContainer from './Cards/CardContainer';
 
 class App extends Component {
   constructor(){
@@ -15,7 +14,9 @@ class App extends Component {
   render() {
     return (
       <div>
-       <SkillContainer />
+        <CardContainer />
+        <SkillContainer />
+        <ProjectContainer />
       </div>
     );
   }

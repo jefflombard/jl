@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SkillContainer from './Skills/SkillContainer';
 import Skill from './Skills/Skill';
 
 class App extends Component {
@@ -14,10 +15,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Skill name="javascript"/>
-        <Skill name="react"/>
-        <Skill name="jest"/>
-        <Skill name="functional programming"/>
+       <SkillContainer />
       </div>
     );
   }

@@ -3,9 +3,10 @@ import './Skill.css';
 import Skill from "./Skill";
 
 class SkillsContainer extends Component {
+  static defaultProps = {skills:[]};
+  
   render() {
-    let skills = ["javascript","react","test"];
-    let skillsList = skills.map((skill,id) => {
+    let skillsList = this.props.skills.map((skill,id) => {
       return (
           <div key={'skill'+id} className="skillContainer-FlexItem">
             <Skill name={skill}/>

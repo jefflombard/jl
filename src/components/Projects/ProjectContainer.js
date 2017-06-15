@@ -4,7 +4,7 @@ import ProjectSearch from './ProjectSearch';
 import Project from './Project';
 
 class ProjectContainer extends Component {
-  static defaultProps = {projects:[{title: "test title",desc:"testdecs",tags:"testtag"}]};
+  static defaultProps = {projects:[]};
 
   render() {
     const projectList = this.props.projects.map((project,id) => {

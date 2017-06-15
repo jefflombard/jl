@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import './Project.css';
-import ProjectSearch from './ProjectSearch'
+import ProjectSearch from './ProjectSearch';
+import Project from './Project';
 
 class ProjectContainer extends Component {
   
   render() {
     
     return (
-      <div className="cardContainer">
+      <div className="projectContainer">
         <h2>projects</h2>
-        <ProjectSearch />
-        
+        <div className="project-flexContainer">
+                    <Project />
+
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          
+        </div>
       </div>
     )
   }

@@ -1,3 +1,52 @@
-.cardContainer{
+.projectContainer{
   text-align: center;
+}
+
+.project-flexContainer{
+  border: 1px solid black;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  width: 808px;
+}
+
+.project{
+  text-align: left;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.project p.tags {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: black;
+}
+
+.project:hover{
+  background-color: black;
+  color: white;
+}
+
+.project:hover img{
+  display: none;
+}
+
+.project h3{
+  margin: 15px;
+}
+.project p{
+  color: white;
+  margin: 15px;
+}
+
+.tags{
+  position: absolute;
+  bottom: 2px;
 }

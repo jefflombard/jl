@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import './Project.css';
 import logo from './cah.png'
 
-class Project extends Component {
-  
+class Project extends Component { 
   render() {
     
     return (
       <div className="project">
-        <h3>Title</h3>
-        <p>A short description.</p>
-        <span class="tags"><img className="project-logo" src={logo}/><p>Test</p></span>
+        <h3>{this.props.title}</h3>
+        <p>{this.props.desc}</p>
+        <div className="tags"><p><img className="project-logo" src={logo}/>{this.props.tags}</p></div>
       </div>
     )
   }

@@ -6,7 +6,7 @@ class SkillsContainer extends Component {
   static defaultProps = {skills:[]};
   
   render() {
-    let skillsList = this.props.skills.map((skill,id) => {
+    const skillsList = this.props.skills.map((skill,id) => {
       return (
           <div key={'skill'+id} className="skillContainer-FlexItem">
             <Skill name={skill}/>

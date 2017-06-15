@@ -22,13 +22,6 @@
   position: relative;
 }
 
-.project p.tags {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: black;
-}
-
 .project:hover{
   background-color: black;
   color: white;
@@ -46,7 +39,21 @@
   margin: 15px;
 }
 
-.tags{
+div.tags {
+  width: 100%;
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
+  left: 0;
+}
+
+div.tags p {
+  font-size: 12px;
+  color: black;
+}
+
+div.tags p img{
+  color: black;
+  font-size: 12px;
+  margin-right: 5px;
+  vertical-align: middle;
 }

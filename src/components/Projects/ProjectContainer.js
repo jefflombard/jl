@@ -17,7 +17,7 @@ class ProjectContainer extends Component {
     
     return (
       <div className="projectContainer">
-        <h2>projects</h2>
+        <h2>side projects</h2>
         <div className="project-flexContainer">
           {projectList}
         </div>

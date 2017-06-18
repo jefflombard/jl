@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import "./CardContainer.css"
 
 class CardContainer extends Component {
   
   render() {
     
     return (
-      <div className="cardContainer">
-        
-      </div>
+      <section>
+      
+      </section>
     )
   }
 }

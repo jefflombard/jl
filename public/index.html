@@ -6,22 +6,55 @@
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/cah.css">
     <title>Jeff Lombard</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to view this site :/
     </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section class='main'>
+      <div class='card-container'>
+        <div class='light card'>
+          <ul class='text menu'>
+            <li><a href='#portfolio'>portfolio</a></li>
+            <li id ='blog'><a href='https://medium.com/@JeffLombardJr' target="_blank">blog</a></li>
+            <li><a href='#portfolio' id='contact-button'>contact</a></li>
+          </ul>
+        </div>
+        <div id='question' class='dark card'>
+          <p id='skillsText' class='text'>I want to work with _______ on ________ .</p>
+          <p id='aboutText' class='text hide'>Who is __________ ?</p>
+          <p id='contactText' class='text hide'>I want to contact _________ through _________ .</p>
+        </div>
+        <div class='light card'>
+          <h1 class='text'>Jeff Lombard</h1>
+        </div>
+        <div id = 'skills' class='light card'>
+          <p class='text'>Web Applications</p>
+          <p class='text hide'>Mobile Applications</p>
+          <p class='text hide'>JavaScript Development</p>
+          <p class='text hide'>Python Development</p>
+          <p class='text hide'>Marketing</p>
+        </div>
+        <div id='contact' class='light card hide'>
+          <ul class='text menu'>
+            <li><a id='email'>email</a></li>
+            <li><a href='https://www.linkedin.com/in/jefflombardjr' target="_blank">linkedin</a></li>
+            <li><a href='https://twitter.com/JeffLombardJr' target="_blank">twitter</a></li>
+            <li><a href='https://github.com/jefflombard' target="_blank">github</a></li>
+          </ul>
+        </div>
+        <div id='about' class='light card hide'>
+          <p class = 'subtext'>My professional background is primarily in B2B marketing and web development.</p>
+          <p class = 'subtext'>I am currently looking for a development position in a start up, growing, or otherwise disruptive company.</p>
+          <p class = 'subtext'>When I'm not working, I'm enjoy reading, traveling, gardening, playing with Arduino, brewing, and seeing live music.</p>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      </div>
+    </section>
+    <section id="portfolio" class="section">
+      <div id="root"></div>
+    </section>
   </body>
 </html>

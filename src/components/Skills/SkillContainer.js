@@ -16,7 +16,7 @@ class SkillsContainer extends Component {
 
     return (
       <div className="skillContainer">
-        <h2>skills</h2>
+        <h2>favorite skills</h2>
         <div className="skillContainer-FlexBox">
           {skillsList}
         </div>

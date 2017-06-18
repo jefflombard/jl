@@ -9,8 +9,8 @@ class ProjectContainer extends Component {
   render() {
     const projectList = this.props.projects.map((project,id) => {
       return (
-          <div key={'project'+id} className="skillContainer-FlexItem">
-            <Project title={project.title} desc={project.desc} tags={project.tags}/>         
+          <div key={'project'+id} className="projectContainer-FlexItem">
+            <Project title={project.title} desc={project.desc} tags={project.tags} url={project.url}/>         
           </div>
         );
       });
